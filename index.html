@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles copy.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">HELLO LOVEEEEEE</h1>
+                <h1 class = "header_text"></h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://i.gifer.com/Pak.gif" 
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "HelloButton" onclick="nextPage()">Hello</button>
+                <button class="btn" id="AyokoButton" onmouseover="moveButton()" onclick="moveButton()">Ayoko</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "Hello.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('AyokoButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('AyokoButton').offsetHeight) - 48;
+                        document.getElementById('AyokoButton').style.left = `${x}px`;
+                        document.getElementById('AyokoButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+        
+    </body> 
+</html>
